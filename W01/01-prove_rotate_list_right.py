@@ -19,10 +19,10 @@ def rotate_list_right(data, amount):
     len(data).
     """
     # This line creates a new list of all the numbers in the data list that get overflowed
-    overflowedNumberlist = data[(len(data) - amount):]
+    overflowedNumberList = data[(len(data) - amount):]
     # This line creates a new list of all the numbers that get pushed to the right.
     pushedNumberList = data[:(len(data) - amount)]
-    return [*overflowedNumberlist, *pushedNumberList]
+    return [*overflowedNumberList, *pushedNumberList]
 
     # One line code to do this
     # return [*data[(len(data) - amount):], *data[:(len(data) - amount)]]
